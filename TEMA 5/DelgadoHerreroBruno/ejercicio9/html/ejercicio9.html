@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 9</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #b60000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      color: white;
+    }
+
+    #contenedor {
+      display: flex;
+      align-items: center;
+    }
+
+    #logo {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s;
+    }
+
+    #logo:hover {
+      transform: rotate(360deg);
+    }
+
+    #segunda_foto {
+      display: none;
+      width: 50px;
+      height: 50px;
+      margin-left: 10px;
+      transition: opacity 0.3s;
+    }
+
+    #contenedor:hover #segunda_foto {
+      display: block;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 0 15px;
+    }
+
+    p {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    p:hover {
+      color: #a59a00;
+    }
+
+    #segunda_foto{
+        width: 150px; 
+        
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div id="contenedor">
+      <img id="logo" src="../img/logo_salesianos.png" alt="Logo">
+      <img id="segunda_foto" src="../img/Logo-horizontal-segundo-nivel.png">
+      <ul>
+        <li><p>Inicio</p></li>
+        <li><p>Servicios</p></li>
+        <li><p>Acerca de</p></li>
+      </ul>
+    </div>
+
+    <ul>
+      <li><p>Contacto</p></li>
+      <li><p>Ayuda</p></li>
+    </ul>
+  </nav>
+
+</body>
+</html>

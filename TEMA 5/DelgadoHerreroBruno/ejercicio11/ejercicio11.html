@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio11</title>
+        <style>
+            body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 900px;
+      margin: 0;
+    }
+
+
+    #disco {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border-radius: 50%;
+      position: relative;
+      animation: giro 60s linear infinite;
+    }
+
+
+    #aguja {
+      width: 5px;
+      height: 100px;
+      background-color: white;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%) rotate(0deg);
+      transform-origin: bottom center;
+    }
+
+
+    @keyframes giro {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    </style>
+    </head>
+
+
+    <body>
+        <div id="disco">
+            <div id="aguja"></div>
+        </div>
+    </body>
+</html>
+

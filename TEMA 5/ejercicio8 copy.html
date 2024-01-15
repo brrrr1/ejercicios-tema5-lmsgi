@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Estilos generales del menú */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      position: relative;
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    li:hover {
+      background-color: #2980b9;
+    }
+
+    /* Estilos del submenú */
+    ul ul {
+      display: none;
+      padding: 0;
+      margin: 0;
+      background-color: #2980b9;
+      animation: slideDown 0.3s ease-in-out;
+      position: relative;
+    }
+
+    li:hover > ul {
+      display: block;
+    }
+
+    ul ul li {
+      padding: 10px;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    ul ul li:hover {
+      background-color: #1f618d;
+    }
+
+    /* Animación de despliegue */
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li>Inicio
+        <ul>
+          <li>Subopción 1</li>
+          <li>Subopción 2</li>
+          <li>Subopción 3</li>
+          <li>Subopción 4</li>
+          <li>Subopción 5</li>
+        </ul>
+      </li>
+      <li>Quiénes somos
+        <ul>
+          <li>Subopción 1</li>
+          <li>Subopción 2</li>
+          <li>Subopción 3</li>
+          <li>Subopción 4</li>
+          <li>Subopción 5</li>
+        </ul>
+      </li>
+      <li>Dónde estamos
+        <ul>
+          <li>Subopción 1</li>
+          <li>Subopción 2</li>
+          <li>Subopción 3</li>
+          <li>Subopción 4</li>
+          <li>Subopción 5</li>
+        </ul>
+      </li>
+      <li>Contacto
+        <ul>
+          <li>Subopción 1</li>
+          <li>Subopción 2</li>
+          <li>Subopción 3</li>
+          <li>Subopción 4</li>
+          <li>Subopción 5</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+</body>
+</html>
